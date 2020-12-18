@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/helpFragment2"
+    android:title="Help"
+    android:icon="@drawable/ic_baseline_headset_mic_24"
+    app:showAsAction="always"/>
+    <item
+        android:id="@+id/notificationFragment2"
+        android:title="Notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/controlFragment"
+        android:icon="@drawable/control"
+        android:title="Profile"
+        app:showAsAction="always"
+        />
+
+
+</menu>

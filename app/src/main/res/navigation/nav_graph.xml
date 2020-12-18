@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ExploreFragment"
+        android:label="ExploreFragment" >
+        <action
+            android:id="@+id/action_exploreFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+        <action
+            android:id="@+id/action_exploreFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_exploreFragment_to_addYourProgressFragment"
+            app:destination="@id/addYourProgressFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_coachesListFragment"
+            app:destination="@id/coachesListFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_coachNearYouFragment"
+            app:destination="@id/coachNearYouFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_coachConsultFragment"
+            app:destination="@id/coachConsultFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_coachNearYouFragment2"
+            app:destination="@id/coachNearYouFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_coachDescriptionFragment"
+            app:destination="@id/coachDescriptionFragment" />
+        <action
+            android:id="@+id/action_exploreFragment_to_freeCoachesList"
+            app:destination="@id/freeCoachesList" />
+        <action
+            android:id="@+id/action_exploreFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+        <action
+            android:id="@+id/action_profileFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscribedFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.SubscribedFragment"
+        android:label="SubscribedFragment" >
+        <action
+            android:id="@+id/action_subscribedFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+        <action
+            android:id="@+id/action_subscribedFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_subscribedFragment_to_lecturesFragment"
+            app:destination="@id/lecturesFragment" />
+        <action
+            android:id="@+id/action_subscribedFragment_to_subscribedLectureList"
+            app:destination="@id/subscribedLectureList" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourProgressFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.YourProgressFragment"
+        android:label="YourProgressFragment" >
+        <action
+            android:id="@+id/action_yourProgressFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+        <action
+            android:id="@+id/action_yourProgressFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_yourProgressFragment_to_addYourProgressFragment"
+            app:destination="@id/addYourProgressFragment" />
+        <action
+            android:id="@+id/action_yourProgressFragment_to_addGameScore"
+            app:destination="@id/addGameScore" />
+        <action
+            android:id="@+id/action_yourProgressFragment_to_scoreCardDetails2"
+            app:destination="@id/scoreCardDetails2" />
+        <action
+            android:id="@+id/action_yourProgressFragment_to_gameProgressVideoUpload"
+            app:destination="@id/gameProgressVideoUpload" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment2"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.HelpFragment"
+        android:label="HelpFragment" >
+        <action
+            android:id="@+id/action_helpFragment2_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_helpFragment2_to_controlFragment"
+            app:destination="@id/controlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment2"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.NotificationFragment"
+        android:label="NotificationFragment" >
+        <action
+            android:id="@+id/action_notificationFragment2_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <argument
+            android:name="coach"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+        <action
+            android:id="@+id/action_notificationFragment2_to_controlFragment"
+            app:destination="@id/controlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addYourProgressFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.AddYourProgressFragment"
+        android:label="AddYourProgressFragment" >
+        <action
+            android:id="@+id/action_addYourProgressFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_addYourProgressFragment_to_yourProgressFragment"
+            app:destination="@id/yourProgressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coachesListFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.CoachesListFragment"
+        android:label="CoachesListFragment" >
+        <action
+            android:id="@+id/action_coachesListFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+        <action
+            android:id="@+id/action_coachesListFragment_to_coachDescriptionFragment"
+            app:destination="@id/coachDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coachDescriptionFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.CoachDescriptionFragment"
+        android:label="CoachDescriptionFragment" >
+        <action
+            android:id="@+id/action_coachDescriptionFragment_to_coachesListFragment"
+            app:destination="@id/coachesListFragment" />
+        <action
+            android:id="@+id/action_coachDescriptionFragment_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+
+        <argument
+            android:name="coach"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+        <action
+            android:id="@+id/action_coachDescriptionFragment_to_lecturesFragment"
+            app:destination="@id/lecturesFragment" />
+        <action
+            android:id="@+id/action_coachDescriptionFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+        <action
+            android:id="@+id/action_coachDescriptionFragment_to_freeLectureList"
+            app:destination="@id/freeLectureList" />
+    </fragment>
+    <fragment
+        android:id="@+id/lecturesFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.LecturesFragment"
+        android:label="LecturesFragment" >
+        <action
+            android:id="@+id/action_lecturesFragment_to_subscribedFragment"
+            app:destination="@id/subscribedFragment" />
+        <action
+            android:id="@+id/action_lecturesFragment_to_detailLectureFragment"
+            app:destination="@id/detailLectureFragment" />
+        <argument
+            android:name="lecture"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailLectureFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.DetailLectureFragment"
+        android:label="DetailLectureFragment" >
+        <action
+            android:id="@+id/action_detailLectureFragment_to_lecturesFragment"
+            app:destination="@id/lecturesFragment" />
+        <argument
+            android:name="lectureDetails"
+            app:argType="com.pasosync.pasosyncconnect.data.LectureDetails" />
+        <action
+            android:id="@+id/action_detailLectureFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coachConsultFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.CoachConsultFragment"
+        android:label="CoachConsultFragment" >
+        <action
+            android:id="@+id/action_coachConsultFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_coachConsultFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/coachNearYouFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.CoachNearYouFragment"
+        android:label="CoachNearYouFragment" >
+        <action
+            android:id="@+id/action_coachNearYouFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+        <action
+            android:id="@+id/action_coachNearYouFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.PurchaseFragment"
+        android:label="PurchaseFragment" >
+        <action
+            android:id="@+id/action_purchaseFragment_to_lecturesFragment"
+            app:destination="@id/lecturesFragment" />
+        <argument
+            android:name="lecture"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/subscribedLectureList"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.SubscribedLectureList"
+        android:label="SubscribedLectureList" >
+        <argument
+            android:name="subs"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+        <action
+            android:id="@+id/action_subscribedLectureList_to_subscribedLectureDetails"
+            app:destination="@id/subscribedLectureDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscribedLectureDetails"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.SubscribedLectureDetails"
+        android:label="SubscribedLectureDetails" >
+        <argument
+            android:name="lec"
+            app:argType="com.pasosync.pasosyncconnect.data.LectureDetails" />
+        <action
+            android:id="@+id/action_subscribedLectureDetails_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.PdfFragment"
+        android:label="PdfFragment" >
+        <argument
+            android:name="lec"
+            app:argType="com.pasosync.pasosyncconnect.data.LectureDetails" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.pasosync.pasosyncconnect.ui.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" ></activity>
+    <activity
+        android:id="@+id/firstProfileActivity"
+        android:name="com.pasosync.pasosyncconnect.ui.FirstProfileActivity"
+        android:label="activity_first_profile"
+        tools:layout="@layout/activity_first_profile" />
+    <fragment
+        android:id="@+id/freeCoachesList"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.FreeCoachesList"
+        android:label="FreeCoachesList" >
+        <action
+            android:id="@+id/action_freeCoachesList_to_freeLectureList"
+            app:destination="@id/freeLectureList" />
+    </fragment>
+    <fragment
+        android:id="@+id/freeLectureList"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.FreeLectureList"
+        android:label="FreeLectureList" >
+        <argument
+            android:name="article"
+            app:argType="com.pasosync.pasosyncconnect.data.ExploreCoachList" />
+        <action
+            android:id="@+id/action_freeLectureList_to_freeLectureDetails"
+            app:destination="@id/freeLectureDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/freeLectureDetails"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.FreeLectureDetails"
+        android:label="FreeLectureDetails" >
+        <argument
+            android:name="lec"
+            app:argType="com.pasosync.pasosyncconnect.data.LectureDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/allLecture"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.AllLecturesFragment"
+        android:label="AllLecturesFragment" >
+        <action
+            android:id="@+id/action_allLecture_to_allLectureDetails"
+            app:destination="@id/allLectureDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/allLectureDetails"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.AllLectureDetails"
+        android:label="AllLectureDetails" >
+        <argument
+            android:name="lec"
+            app:argType="com.pasosync.pasosyncconnect.data.AllLectureDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ArticleFragment"
+        android:label="ArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.pasosync.pasosyncconnect.models.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGameScore"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.AddGameScore"
+        android:label="AddGameScore" >
+        <action
+            android:id="@+id/action_addGameScore_to_yourProgressFragment"
+            app:destination="@id/yourProgressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreCardDetails2"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ScoreCardDetails"
+        android:label="ScoreCardDetails" >
+        <argument
+            android:name="score"
+            app:argType="com.pasosync.pasosyncconnect.data.GameScoreDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_scoreCardDetails2"
+            app:destination="@id/scoreCardDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.PracticeFragment"
+        android:label="fragment_practice"
+        tools:layout="@layout/fragment_practice" >
+        <action
+            android:id="@+id/action_practiceFragment_to_scoreCardDetails2"
+            app:destination="@id/scoreCardDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameProgressVideoUpload"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.GameProgressVideoUpload"
+        android:label="GameProgressVideoUpload" >
+        <action
+            android:id="@+id/action_gameProgressVideoUpload_to_trimVideoFragment"
+            app:destination="@id/trimVideoFragment" />
+        <action
+            android:id="@+id/action_gameProgressVideoUpload_to_progressVideoFragment"
+            app:destination="@id/progressVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trimVideoFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.TrimVideoFragment"
+        android:label="TrimVideoFragment" >
+        <argument
+            android:name="trim"
+            app:argType="com.pasosync.pasosyncconnect.data.TrimVideoData" />
+    </fragment>
+    <fragment
+        android:id="@+id/controlFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ControlFragment"
+        android:label="ControlFragment" >
+        <action
+            android:id="@+id/action_controlFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+        <action
+            android:id="@+id/action_controlFragment_to_notificationFragment2"
+            app:destination="@id/notificationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/progressVideoFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.ProgressVideoFragment"
+        android:label="ProgressVideoFragment" >
+        <action
+            android:id="@+id/action_progressVideoFragment_to_videoProgressDetails"
+            app:destination="@id/videoProgressDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoProgressDetails"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.VideoProgressDetails"
+        android:label="VideoProgressDetails" >
+        <argument
+            android:name="video"
+            app:argType="com.pasosync.pasosyncconnect.data.VideoProgressData" />
+        <action
+            android:id="@+id/action_videoProgressDetails_to_addQueryFragment"
+            app:destination="@id/addQueryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addQueryFragment"
+        android:name="com.pasosync.pasosyncconnect.ui.fragment.AddQueryFragment"
+        android:label="AddQueryFragment" >
+        <action
+            android:id="@+id/action_addQueryFragment_to_videoProgressDetails"
+            app:destination="@id/videoProgressDetails" />
+        <argument
+            android:name="query"
+            app:argType="com.pasosync.pasosyncconnect.data.QueryData" />
+    </fragment>
+</navigation>

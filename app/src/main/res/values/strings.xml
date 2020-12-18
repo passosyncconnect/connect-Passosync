@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Passosync Connect</string>
+    <string name="register"><u>Click here to Register</u></string>
+    <string name="login"><u>Click here to Login</u></string>
+    <string-array name="search">
+        <item>Choose to filter Lecture</item>
+        <item>Batting</item>
+        <item>Bowling</item>
+        <item>Fielding</item>
+        <item>Captaincy</item>
+        <item>Net Preparation</item>
+        <item>Match Preparation</item>
+        <item>Strength and Conditioning</item>
+        <item>Mental Skills</item>
+    </string-array>
+    <string name="help_title">Having an issue? We are here to help you in any case.</string>
+    <string name="help_writeEmail"><u>Click here to Write an Email to us.</u></string>
+    <string name="webclient_id">538141149503-roab7rsrcm439ij1i30v6839skqrq5cg.apps.googleusercontent.com</string>
+    <string name="termsandcondition"><u>Terms and Condition</u></string>
+    <string name="about_profile">Dragon Ball Z in Hindi,Dragon Ball Z,Dragon ball z gohan vs cell full fight in hindi,dragon ball z full episode in hindi,dragon ball z in urdu,dragon ball z cartoon in hindi,dragon ball z,dragon ball z gohan vs cell in hindi,dragon ball z cartoon,dragon ball z movie,dragon ball z full episode,dragon ball z new movie,Dragon ball z,dragon ball z in hindi.Dragon Ball Z in Hindi,Dragon Ball Z,Dragon ball z gohan vs cell full fight in hindi,dragon ball z full episode in hindi,dragon ball z in urdu,dragon ball z cartoon in hindi,dragon ball z,dragon ball z gohan vs cell in hindi,dragon ball z cartoon,dragon ball z movie,dragon ball z full episode,dragon ball z new movie,Dragon ball z,dragon ball z in hindi.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
